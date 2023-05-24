@@ -1,18 +1,24 @@
 package com.hritik.flightreservation.entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToOne;
 
 @Entity
 public class Reservation extends AbstractEntity{
 
+	@Column(name = "CHECKED_ID")
 	private boolean checkedIn;
+	
+	@Column(name = "NUMBER_OF_BAGS")
 	private int numberOfBags;
+	
 	@OneToOne
 	private Passenger passenger;
+	
 	@OneToOne
 	private Flight flight;
-
+	
 	public boolean isCheckedIn() {
 		return checkedIn;
 	}
