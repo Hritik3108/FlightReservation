@@ -19,10 +19,14 @@ public class FlightController {
 	@Autowired
 	FlightRepository flightRepository;
 	
-	@RequestMapping("findFlights")
+	@RequestMapping("findflights")
 	public String findFlights(@RequestParam("from")String from,@RequestParam("to")String to,
 			@RequestParam("departureDate") @DateTimeFormat(pattern="MM-dd-yyyy") Date departureDate,ModelMap modelMap) {
 		List<Flight> flights = flightRepository.findFlights(from,to,departureDate);
+		flights.forEach(e ->{
+			System.out.println("Working till here");
+			System.out.println(e);
+		});
 		modelMap.addAttribute("flights", flights);
 		return "displayFlights";
 	}
