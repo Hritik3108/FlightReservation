@@ -14,6 +14,8 @@ import com.hritik.flightreservation.entities.Reservation;
 import com.hritik.flightreservation.repos.FlightRepository;
 import com.hritik.flightreservation.repos.PassengerRepository;
 import com.hritik.flightreservation.repos.ReservationRepository;
+import com.hritik.flightreservation.util.EmailUtil;
+import com.hritik.flightreservation.util.PDFGenerator;
 
 @Service
 public class ReservationServiceImpl implements ReservationService {
@@ -26,6 +28,12 @@ public class ReservationServiceImpl implements ReservationService {
 	
 	@Autowired
 	ReservationRepository reservationRepository;
+	
+	@Autowired
+	PDFGenerator pdfGenerator;
+	
+	@Autowired
+	EmailUtil emailUtil;
 	
 	@Override
 	public Reservation bookFlight(ReservationRequest request) {
@@ -47,6 +55,11 @@ public class ReservationServiceImpl implements ReservationService {
 //		reservation.setNumberOfBags(1);
 		
 		Reservation savedReservation=reservationRepository.save(reservation);
+		
+		//email
+		String filePath="C:\\Users\\Hritik\\Desktop\\PDFG"+savedReservation.getPassenger().getFirstName()+".pdf";
+		pdfGenerator.generateItineary(savedReservation, filePath);
+		emailUtil.sendItinerary(savedReservation.getPassenger().getEmail(), filePath);
 		
 		return savedReservation;
 	}
