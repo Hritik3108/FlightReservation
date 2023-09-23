@@ -1,0 +1,109 @@
+/* Footer Styles */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      
+      .footer-section {
+        flex: 1;
+        margin: 0 20px;
+        
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 20px;
+        }
+        
+        .contact {
+          margin-top: 10px;
+          
+          span {
+            display: block;
+            margin-bottom: 10px;
+          }
+        }
+        
+        .social-icons {
+          a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 1.5rem;
+          }
+        }
+      }
+      
+      .links {
+        ul {
+          list-style: none;
+          padding: 0;
+          
+          li {
+            margin-bottom: 10px;
+            
+            a {
+              color: #fff;
+              text-decoration: none;
+              transition: color 0.3s;
+              
+              &:hover {
+                color: #0073e6;
+              }
+            }
+          }
+        }
+      }
+      
+      .contact-form {
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 20px;
+        }
+
+        input, textarea {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          font-size: 1rem;
+          
+          &.contact-input {
+            height: 70px;
+            resize: none;
+          }
+        }
+        
+        .btn-primary {
+          width: 45%;
+          background-color: #0073e6;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          
+          &:hover {
+            background-color: #0054a8;
+          }
+        }
+      }
+    }
+    
+    .footer-bottom {
+      margin-top: 15px;
+      background-color: #222;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  

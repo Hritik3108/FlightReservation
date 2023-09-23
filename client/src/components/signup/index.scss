@@ -1,0 +1,134 @@
+section{
+
+    .form-box{
+        height: 520px;
+        width: 440px;
+
+        .back-btn{
+            font-size: 30px;
+            position: absolute;
+            left: 5%;
+            top: 5%            
+        }
+
+        .signup-form{
+            width: 90%;
+            margin-top: 20px;
+            
+            h2{
+                font-size: 2em;
+                color: #fff;
+                text-align: center;
+            }
+
+            .form-inline{
+                display: flex;
+                margin-right: 10px;
+
+                li{
+                    list-style: none;
+                    position: relative;
+                    margin: 30px 2px;
+                    width: 100%;
+                    border-bottom: 2px solid #fff;
+                    height: 40px;
+                    border-radius: 40px;
+
+                    .inputbox{
+                        position: absolute;
+                        top: 50%;
+                        background: transparent;
+                        left: 5px;
+                        transform: translateY(-50%);
+                        font-size: 1em;
+                        transition: .5s;
+                        width: 90%;
+                        height: 50px;
+                        border: none;
+                        border-radius: 40px;
+                        outline: none;
+                        font-size: 1em;
+                        color: #fff;    
+                        padding:0 35px 0 5px;
+                    }
+
+                    .first{
+                        width: 45%;
+                    }
+                    .second{
+                        width: 45%;
+                        margin-left: 45%;
+                    }
+                }
+            }
+
+            ul{
+                li{
+                    list-style: none;
+                    position: relative;
+                    margin: 30px 2px;
+                    width: 100%;
+                    border-bottom: 2px solid #fff;
+                    height: 40px;
+                    border-radius: 40px;
+
+                    .inputbox{
+                        position: absolute;
+                        top: 50%;
+                        background: transparent;
+                        left: 5px;
+                        transform: translateY(-50%);
+                        font-size: 1em;
+                        transition: .5s;
+                        width: 90%;
+                        height: 50px;
+                        border: none;
+                        border-radius: 40px;
+                        outline: none;
+                        font-size: 1em;
+                        color: #fff;    
+                        padding:0 35px 0 5px;
+                    }
+
+                    .first{
+                        width: 45%;
+                    }
+                    .second{
+                        width: 45%;
+                        margin-left: 45%;
+                    }
+
+                }
+
+                .submit-btn{
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 40px;
+                    background: #fff;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 1em;
+                    font-weight: 600;
+                }
+            }
+        
+            .form-text{
+                font-size: .9em;
+                color: #fff;
+                text-align: center;
+                margin: 25px 0 10px;
+
+                p a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                p a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
