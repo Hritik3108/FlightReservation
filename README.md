@@ -21,14 +21,14 @@ Having done that, you can create some base data in the database.
 After this open client directory
 run npm install or whichever package manager you want from cli then run the client side of the project
 # Endpoints
-http://localhost:8080/FlightReservation/
-http://localhost:8080/FlightReservation/api/v1/auth/register
-http://localhost:8080/FlightReservation/api/v1/auth/authenticate
-http://localhost:8080/FlightReservation/api/v1/Reservation/search
-http://localhost:8080/FlightReservation/api/v1/Reservation/showCompleteReservation
-http://localhost:8080/FlightReservation/api/v1/auth/logout
+* http://localhost:8080/FlightReservation/
+* http://localhost:8080/FlightReservation/api/v1/auth/register
+* http://localhost:8080/FlightReservation/api/v1/auth/authenticate
+* http://localhost:8080/FlightReservation/api/v1/Reservation/search
+* http://localhost:8080/FlightReservation/api/v1/Reservation/showCompleteReservation
+* http://localhost:8080/FlightReservation/api/v1/auth/logout
 
-#Preview
+# Preview
 ![Screenshot (186)](https://github.com/Hritik3108/FlightReservation/assets/126381615/8207a196-056e-4300-850f-76fd8b8f46f2)
 ![Screenshot (188)](https://github.com/Hritik3108/FlightReservation/assets/126381615/7a7e74c5-0302-4b2e-8b03-ffcb38223af6)
 ![Screenshot (187)](https://github.com/Hritik3108/FlightReservation/assets/126381615/1ac5f07b-e948-4ced-a2de-dadccbc51f86)
