@@ -7,7 +7,10 @@ If you are using IntelliJ IDEA, make sure the IDE recognizes the project as a Sp
 Make sure you are in the server directory
 Configure the database connection in application.properties file (check the Database section below for more info)
 Run the server (by running the main method in ServerApplication.java)
-Open http://localhost:8080/ in your browser!
+After starting the server start the client by npm run dev.
+Open in your browser!
+Make sure to configure web configuration according to your needs.
+
 # Database
 MySQL or MariaDB can be used as the database for this project. The database connection can be configured in the application.properties file, with the appropriate values for the following properties:
 
