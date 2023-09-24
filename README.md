@@ -1,5 +1,5 @@
 # FlightReservation
-A Fullstack project for flight reservation with responsive frontend, spring security, jwt authorization.
+A Fullstack project for flight reservation with responsive frontend, spring security, jwt authorization and springboot framework.
 # Quickstart
 Clone the repository
 Open the project in your IDE: Spring tool suite (recommended) or Eclipse
@@ -11,18 +11,18 @@ Open http://localhost:8080/ in your browser!
 # Database
 MySQL or MariaDB can be used as the database for this project. The database connection can be configured in the application.properties file, with the appropriate values for the following properties:
 
-    spring.datasource.url=jdbc:mysql://[ip address of db]:[port of db]/ecommjava?createDatabaseIfNotExist=true
+    spring.datasource.url=jdbc:mysql://[ip address of db]:[port of db]/reservation?createDatabaseIfNotExist=true
     spring.datasource.username=[username]
     spring.datasource.password=[password, if any]
-Having done that, you must create some base data in the database.
+Having done that, you can create some base data in the database.
 After this open client directory
 run npm install or whichever package manager you want from cli then run the client side of the project
 # Endpoints
-http://localhost:8082/FlightReservation/
-http://localhost:8082/FlightReservation/api/v1/auth/register
+http://localhost:8080/FlightReservation/
+http://localhost:8080/FlightReservation/api/v1/auth/register
 http://localhost:8080/FlightReservation/api/v1/auth/authenticate
-http://localhost:8082/FlightReservation/api/v1/Reservation/search
-http://localhost:8082/FlightReservation/api/v1/Reservation/showCompleteReservation
+http://localhost:8080/FlightReservation/api/v1/Reservation/search
+http://localhost:8080/FlightReservation/api/v1/Reservation/showCompleteReservation
 http://localhost:8080/FlightReservation/api/v1/auth/logout
 
 #Preview
